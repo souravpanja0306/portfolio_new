@@ -11,7 +11,7 @@ import Contact from './pages/Contact'
 import About from "./pages/About"
 import Experiences from "./pages/Experiences"
 import Project from "./pages/Project"
-import Error from "./pages/Error"
+import Error from "./404"
 
 // Redux
 import store from './store/store'
