@@ -12,10 +12,11 @@ const Home = () => {
 
     return (
         <>
-            <div className="flex-cols md:lg:xl:flex p-8 items-center" >
+            <div className="flex-cols md:lg:xl:flex p-8 min-h-screen" 
+            style={{ backgroundImage: `url("/assets/sourav33.jpg")`}}>
 
                 <div className='w-full md:lg:xl:w-1/3 flex justify-center md:lg:xl:p-12 '>
-                    <img src='/assets/sourav3.jpg' alt='Images' className='h-60 md:lg:xl:h-96 rounded-full border-4 border-solid border-slate-400 shadow-xl' />
+                    {/* <img src='/assets/sourav33.jpg' alt='Images' className='h-60 md:lg:xl:h-96 rounded-full border-4 border-solid border-slate-400 shadow-xl' /> */}
                 </div>
                 <div className='w-full md:lg:xl:w-2/3 justify-center md:lg:xl:p-12 py-2'>
                     <div className='text-white text-center md:lg:xl:text-left'>
@@ -25,22 +26,22 @@ const Home = () => {
                     </div>
                     <div className='flex text-center justify-center md:lg:xl:p-6 py-2'>
                         <a href="https://www.instagram.com/panja0306/" target="blank">
-                            <AiFillInstagram className='md:lg:xl:mx-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-pink-800 shadow-xl rounded-full hover:text-7xl' />
+                            <AiFillInstagram className='md:lg:xl:m-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-pink-800 shadow-xl rounded-full' />
                         </a>
                         <a href="https://www.facebook.com/souravpanja03" target="blank">
-                            <AiOutlineFacebook className='md:lg:xl:mx-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-blue-600 shadow-xl rounded-full hover:text-7xl' />
+                            <AiOutlineFacebook className='md:lg:xl:m-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-blue-600 shadow-xl rounded-full' />
                         </a>
                         <a href="https://github.com/souravpanja0306" target="blank">
-                            <AiFillGithub className='md:lg:xl:mx-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-slate-500 shadow-xl rounded-full hover:text-7xl' />
+                            <AiFillGithub className='md:lg:xl:m-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-slate-500 shadow-xl rounded-full' />
                         </a>
                         <a href="https://www.linkedin.com/in/sourav-panja-452b33205/" target="blank">
-                            <AiFillLinkedin className='md:lg:xl:mx-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-blue-700 shadow-xl rounded-full hover:text-7xl' />
+                            <AiFillLinkedin className='md:lg:xl:m-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-blue-700 shadow-xl rounded-full' />
                         </a>
                         <a href="https://wa.me/7278159888" target="blank">
-                            <AiOutlineWhatsApp className='md:lg:xl:mx-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-green-500 shadow-xl rounded-full hover:text-7xl' />
+                            <AiOutlineWhatsApp className='md:lg:xl:m-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-green-500 shadow-xl rounded-full' />
                         </a>
                         <a href="https://twitter.com/souravpanja9" target="blank">
-                            <AiFillTwitterCircle className='md:lg:xl:mx-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-blue-600 shadow-xl rounded-full hover:text-7xl' />
+                            <AiFillTwitterCircle className='md:lg:xl:m-6 text-5xl md:lg:xl:text-6xl hover:rotate-90 duration-500 text-blue-600 shadow-xl rounded-full' />
                         </a>
                     </div>
                     <div className='flex justify-center p-6'>
