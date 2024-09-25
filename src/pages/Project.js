@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { FaNodeJs } from "react-icons/fa";
 import { GoMailRead } from "react-icons/go";
 import { SiMongodb, SiExpress, SiRedux, SiReact, SiSocketdotio, SiFirebase } from "react-icons/si";
+import Layout from '../components/Layout';
 
 
 const Project = () => {
@@ -11,8 +12,8 @@ const Project = () => {
   }, []);
 
   return (
-    <>
-      <div className='md:lg:xl:flex p-8'>
+    <Layout>
+      <div className='md:lg:xl:flex'>
         <div className='w-full md:lg:xl:w-1/2 rounded-lg shadow-lg p-6 md:lg:xl:py-12 md:lg:xl:px-24 bg-slate-100 border-solid border-slate-300 border-2 md:lg:xl:m-6 my-2'>
           <h1 className='font-bold text-orange-600 text-xl md:lg:xl:text-3xl'>Portfolio Website</h1>
           <h1 className='font-bold text-slate-600 text-sm my-2'>Technology Using</h1>
@@ -36,7 +37,7 @@ const Project = () => {
           </ul>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 

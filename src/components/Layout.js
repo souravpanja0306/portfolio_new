@@ -1,23 +1,14 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux'
+import Navbar from './Navbar'
 
 const Layout = ({ children }) => {
-  const themeColor = useSelector((state) => state.theme.color)
-
-  useEffect(() => {
-    const lay = document.getElementById("layout")
-    if (themeColor == "light") {
-      lay.classList.add("bg-green-50")
-      lay.classList.remove("bg-slate-800")
-    } else {
-      lay.classList.add("bg-slate-800")
-      lay.classList.remove("bg-green-50")
-    }
-  }, [themeColor])
+  const themeColor = useSelector((state) => state.theme.color);
 
   return (
     <>
-      <div id="layout" className={`min-h-screen `}>
+      <div id="layout" className={`font-mono min-h-screen ${themeColor == "light" ? "bg-green-50" : "bg-slate-800"}`}>
+        <Navbar />
         {children}
       </div>
     </>
