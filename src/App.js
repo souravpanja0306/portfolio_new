@@ -29,11 +29,11 @@ const App = () => {
             <Navbar />
             <Routes>
               <Route path={'/'} exact element={<Home />}></Route>
-              <Route path={'/about'} exact element={<About />}></Route>
-              <Route path={'/project'} exact element={<Project />}></Route>
-              <Route path={'/experiences'} exact element={<Experiences />}></Route>
-              <Route path={'/contact'} exact element={<Contact />}></Route>
-              <Route path={'*'} element={<Error/>}></Route>
+              <Route path={'/about'} element={<About />}></Route>
+              <Route path={'/project'} element={<Project />}></Route>
+              <Route path={'/experiences'} element={<Experiences />}></Route>
+              <Route path={'/contact'} element={<Contact />}></Route>
+              <Route path={'/*'} element={<Error/>}></Route>
             </Routes>
           </Layout>
         </Router>
