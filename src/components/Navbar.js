@@ -33,7 +33,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className={`py-2 ${themeColor == "light" ? "bg-green-600" : "bg-slate-900"} flex justify-between items-center px-16 shadow-2xl hidden lg:xl:flex w-full`}>
+            <div className={`py-2 ${themeColor == "light" ? "bg-green-600" : "bg-slate-900"} justify-between items-center px-16 shadow-2xl hidden lg:xl:flex w-full`}>
                 <div className=' text-white font-bold text-4xl'>
                     <NavLink to={"/"} className="hover:text-lime-800">Sourav Panja</NavLink>
                 </div>
