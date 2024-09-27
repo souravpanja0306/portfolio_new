@@ -21,7 +21,7 @@ import { darkColor, lightColor } from '../store/slices/themeSlice'
 const Navbar = () => {
     const dispatch = useDispatch()
     const themeColor = useSelector((state) => state.theme.color)
-    const [Menu, setMenu] = useState(false)
+    const [Menu, setMenu] = useState(true)
     const handelMenu = () => setMenu(!Menu);
 
     const ActiveLink = ({ isActive }) => {
