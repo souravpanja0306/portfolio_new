@@ -1,0 +1,10 @@
+stage:
+  -Build
+  -Test
+  -Deploy
+
+
+Build_Job: 
+  stage: Build
+  script:
+    echo : "hello Working"
