@@ -58,7 +58,7 @@ const Navbar = () => {
 
 
             {/* Mobile Views   */}
-            <div className='py-2 bg-green-600 flex justify-between items-center p-8 md:lg:xl:px-16 md:lg:xl:hidden w-full'>
+            <div className={`py-2 ${themeColor == "light" ? "bg-green-600" : "bg-slate-900"} flex justify-between items-center p-8 md:lg:xl:px-16 md:lg:xl:hidden w-full`}>
                 <div className='text-white text-lg' onClick={() => handelMenu()}>
                     {
                         Menu
@@ -84,7 +84,7 @@ const Navbar = () => {
                     }
                 </div>
             </div>
-            <div className={`bg-green-700 flex justify-center items-center md:lg:xl:px-16 md:lg:xl:hidden ${Menu ? "hidden" : ""}`}>
+            <div className={`${themeColor == "light" ? "bg-green-700" : "bg-slate-800"} flex justify-center items-center md:lg:xl:px-16 md:lg:xl:hidden ${Menu ? "hidden" : ""}`}>
                 <div className='flex text-white text-3xl'>
                     <NavLink to={"/"} className="p-3"><AiFillHome className='text-white' /></NavLink>
                     <NavLink to={"/about"} className="p-3"><AiFillProfile className='text-white' /></NavLink>
