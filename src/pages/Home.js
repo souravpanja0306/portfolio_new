@@ -14,8 +14,6 @@ const Home = () => {
     return (
         <Layout>
             <div className="flex-cols md:lg:xl:flex">
-                {/* style={{ backgroundImage: `url("./assets/sourav33.jpg")`, backgroundPosition: "left" }}> */}
-
                 <div className='w-full md:lg:xl:w-1/3 flex justify-center md:lg:xl:p-12 items-center'>
                     <img src='./assets/sourav3.jpg' alt='Images' className='h-60 md:lg:xl:h-96 rounded-full border-4 border-solid border-slate-400 shadow-xl' />
                 </div>

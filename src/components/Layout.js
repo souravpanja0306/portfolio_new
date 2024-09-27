@@ -6,9 +6,11 @@ const Layout = ({ children }) => {
   const themeColor = useSelector((state) => state.theme.color);
 
   return (
-    <div id="layout" className={`font-mono min-h-screen ${themeColor == "light" ? "bg-green-50" : "bg-slate-800"}`}>
+    <div className='font-mono'>
       <Navbar />
-      {children}
+      <div id="layout" className={`min-h-screen ${themeColor === "light" ? "bg-green-50" : "bg-slate-800"} p-2`}>
+        {children}
+      </div>
     </div>
   )
 }
