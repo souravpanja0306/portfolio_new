@@ -7,8 +7,8 @@ on:
 
 stages:
   - build
-
-build_job:
+  
+jobs:
   stage: build
   script: 
    - echo "Hello World"
