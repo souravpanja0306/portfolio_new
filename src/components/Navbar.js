@@ -32,7 +32,7 @@ const Navbar = () => {
     return (
         <>
             {/* Desktop Navbar */}
-            <div className="fixed top-0 z-50 w-full py-3 px-6 shadow-md hidden lg:flex justify-between items-center">
+            <div className={`${themeColor === "light" ? "bg-green-50" : "bg-slate-900"} fixed top-0 z-50 w-full py-3 px-6 shadow-md hidden lg:flex justify-between items-center`}>
                 <div className=" font-bold text-3xl">
                     <NavLink to={"/"} className="hover:text-lime-300 duration-300">Sourav Panja</NavLink>
                 </div>
@@ -81,23 +81,23 @@ const Navbar = () => {
             {Menu && (
                 <div id="menu" className="p-4 flex justify-between items-center lg:hidden transition-all duration-500 shadow-lg">
                     <NavLink to={"/"} className="hover:text-lime-300 flex flex-col justify-center items-center" onClick={handelMenu}>
-                        <AiFillHome className='text-2xl'/>
+                        <AiFillHome className='text-2xl' />
                         <span className='text-sm'>Home</span>
                     </NavLink>
                     <NavLink to={"/about"} className="hover:text-lime-300 flex flex-col justify-center items-center" onClick={handelMenu}>
-                        <AiFillProfile className='text-2xl'/>
+                        <AiFillProfile className='text-2xl' />
                         <span className='text-sm'>About</span>
                     </NavLink>
                     <NavLink to={"/project"} className="hover:text-lime-300 flex flex-col justify-center items-center" onClick={handelMenu}>
-                        <AiOutlineFundProjectionScreen className='text-2xl'/>
+                        <AiOutlineFundProjectionScreen className='text-2xl' />
                         <span className='text-sm'>Project</span>
                     </NavLink>
                     <NavLink to={"/experiences"} className="hover:text-lime-300 flex flex-col justify-center items-center" onClick={handelMenu}>
-                        <AiFillTool className='text-2xl'/>
+                        <AiFillTool className='text-2xl' />
                         <span className='text-sm'>Experience</span>
                     </NavLink>
                     <NavLink to={"/contact"} className="hover:text-lime-300 flex flex-col justify-center items-center" onClick={handelMenu}>
-                        <AiFillMail className='text-2xl'/>
+                        <AiFillMail className='text-2xl' />
                         <span className='text-sm'>Contact</span>
                     </NavLink>
                 </div>
