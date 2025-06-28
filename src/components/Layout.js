@@ -1,14 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import Navbar from './Navbar'
 
 const Layout = ({ children }) => {
-  const themeColor = useSelector((state) => state.theme.color);
-
+  const themeColor = useSelector((state) => state.theme.color)
   return (
     <>
-      <div id="layout" className={`font-mono min-h-screen ${themeColor == "light" ? "bg-green-50" : "bg-slate-800"}`}>
-        <Navbar />
+      <div id="layout" className={`${themeColor === "light" ? "bg-green-50 text-slate-600" : "bg-slate-800 text-white"} min-h-screen `}>
         {children}
       </div>
     </>

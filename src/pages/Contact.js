@@ -1,9 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import emailjs from '@emailjs/browser';
 import { AiOutlineMail, AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
-import Layout from '../components/Layout';
-
-
 
 const Contact = () => {
   const form = useRef();
@@ -24,43 +21,71 @@ const Contact = () => {
       });
   };
 
-
   return (
-    <Layout>
-      <div className='md:lg:xl:flex'>
-        <div className='flex justify-start items-center lg:xl:w-full rounded-lg shadow-lg p-4 lg:xl:py-12 lg:xl:px-24 bg-slate-100 border-solid border-slate-300 border-2 md:lg:xl:m-6'>
-          <div className='text-orange-600 font-bold text-sm lg:xl:text-lg px-2'>
-            <div className='flex items-center gap-3'>
-              <AiOutlinePhone className='text-3xl text-center my-2' />
-              <h1 className='font-bold text-slate-500 text-sm lg:xl:text-xl'>7278159888 || 7686885164</h1>
+    <>
+      <div className="min-h-screen flex flex-col lg:flex-row items-center justify-center gap-8 px-6 py-12">
+
+        {/* Contact Info */}
+        <div className="  border border-slate-300 rounded-lg shadow-lg w-full lg:w-1/2 p-6 lg:p-12 text-center">
+          <h2 className="text-2xl font-bold text-orange-600 mb-6">Contact Information</h2>
+          <div className="space-y-6  text-base">
+            <div>
+              <AiOutlinePhone className="mx-auto text-3xl text-sky-600 mb-2" />
+              <p>7278159888 / 7686885164</p>
             </div>
-            <div className='flex items-center gap-3'>
-              <AiOutlineMail className='text-3xl text-center my-2' />
-              <h1 className='font-bold text-slate-500 text-sm lg:xl:text-xl'>
-                panjasourav03@gmail.com
-              </h1>
+            <div>
+              <AiOutlineMail className="mx-auto text-3xl text-sky-600 mb-2" />
+              <p>panjasourav03@gmail.com</p>
             </div>
-            <div className='flex items-center gap-3'>
-              <AiOutlineHome className='text-3xl text-center my-2' />
-              <h1 className='font-bold text-slate-500 text-sm lg:xl:text-xl'>Kolkata, West Bengal, 700043</h1>
+            <div>
+              <AiOutlineHome className="mx-auto text-3xl text-sky-600 mb-2" />
+              <p>Hide Road, Kolkata, West Bengal<br />Pin - 700043</p>
             </div>
           </div>
         </div>
-        {/* <div className='w-full md:lg:xl:w-1/2 rounded-lg shadow-lg p-6 lg:xl:py-12 lg:xl:px-24 bg-slate-100 border-solid border-slate-300 border-2 md:lg:xl:m-6 my-2'>
-          <form ref={form}>
-            <label className='font-bold text-slate-500 text-sm lg:xl:text-xl'>Full Name</label>
-            <input className='w-full p-2 border-2 border-solid border-slate-600 rounded-md' type="text" name="user_name" />
-            <label className='font-bold text-slate-500 text-sm lg:xl:text-xl'>Email</label>
-            <input className='w-full p-2 border-2 border-solid border-slate-600 rounded-md' type="email" name="user_email" />
-            <label className='font-bold text-slate-500 text-sm lg:xl:text-xl'>Messege</label>
-            <textarea className='w-full p-2 border-2 border-solid border-slate-600 rounded-md' type="" rows="3" name="message" />
-            <button className='bg-sky-500 px-4 py-2 rounded-lg mt-2 text-white hover:bg-sky-800 shadow-xl'
-              onClick={(e) => handelSubmit(e)}>Send</button>
-          </form>
-        </div> */}
-      </div>
-    </Layout>
-  )
-}
 
-export default Contact
+        {/* Contact Form */}
+        <div className="  border border-slate-300 rounded-lg shadow-lg w-full lg:w-1/2 p-6 lg:p-12">
+          <h2 className="text-2xl font-bold text-orange-600 mb-6 text-center">Send a Message</h2>
+          <form ref={form} onSubmit={handelSubmit} className="space-y-4">
+            <div>
+              <label className="block font-medium mb-1">Full Name</label>
+              <input
+                type="text"
+                name="user_name"
+                required
+                className="w-full px-4 py-2 border border-slate-400 rounded-md focus:outline-none text-black focus:ring-2 focus:ring-sky-500"
+              />
+            </div>
+            <div>
+              <label className="block font-medium mb-1">Email</label>
+              <input
+                type="email"
+                name="user_email"
+                required
+                className="w-full px-4 py-2 border border-slate-400 rounded-md focus:outline-none text-black focus:ring-2 focus:ring-sky-500"
+              />
+            </div>
+            <div>
+              <label className="block font-medium mb-1">Message</label>
+              <textarea
+                name="message"
+                rows="4"
+                required
+                className="w-full px-4 py-2 border border-slate-400 rounded-md focus:outline-none text-black focus:ring-2 focus:ring-sky-500 resize-none"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full py-2 mt-4 bg-sky-600 text-white font-bold rounded-lg hover:bg-sky-700 transition duration-300 shadow-md"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Contact;
