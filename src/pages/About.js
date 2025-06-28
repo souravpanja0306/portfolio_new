@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
 const About = () => {
-
+  const themeColor = useSelector((state) => state.theme.color);
   useEffect(() => {
     document.title = "About Page";
   }, []);

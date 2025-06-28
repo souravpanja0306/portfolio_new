@@ -1,9 +1,8 @@
-import React, { useRef, useEffect } from 'react'
-import emailjs from '@emailjs/browser';
+import React, { useEffect } from 'react'
 import { AiOutlineMail, AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
 
 const Contact = () => {
-  const form = useRef();
+  const themeColor = useSelector((state) => state.theme.color);
 
   useEffect(() => {
     document.title = "Contact Page";

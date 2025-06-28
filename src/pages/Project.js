@@ -4,6 +4,7 @@ import { GoMailRead } from "react-icons/go";
 import { SiMongodb, SiExpress, SiRedux, SiReact, SiSocketdotio, SiFirebase } from "react-icons/si";
 
 const Project = () => {
+  const themeColor = useSelector((state) => state.theme.color);
 
   useEffect(() => {
     document.title = "Projects & Works Page";
